@@ -1,7 +1,2 @@
-import sys
-from pathlib import Path
-
-
-project_root = str(Path(__file__).parent.absolute())
-if project_root not in sys.path:
-    sys.path.append(project_root)
+"""FileSystem RAG - 企业知识库 RAG 系统"""
+__version__ = "0.1.0"

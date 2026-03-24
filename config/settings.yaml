@@ -1,0 +1,84 @@
+# 企业知识库 RAG 系统配置
+
+# API 配置
+api:
+  # Embedding API
+  embedding:
+    type: openai
+    url: http://100.117.128.23:8001
+    key: ""
+    model: qwen3-embedding-0.6b
+
+  # LLM API
+  llm:
+    type: openai
+    url: http://100.117.128.23:8000
+    key: ""
+    model: qwen3-5-4b
+    max_tokens: 2048
+    temperature: 0.7
+
+  # Reranker API
+  reranker:
+    type: openai
+    url: http://100.117.128.23:8002
+    key: ""
+    model: qwen3-reranker-0.6b
+    enabled: false
+
+# 文件提取配置
+extractors:
+  # 内置提取器
+  builtin:
+    - txt
+    - md
+    - json
+    - docx
+    - xlsx
+    - pptx
+    - pdf
+  # 外部提取器 API
+  external:
+    image:
+      enabled: false
+      url: http://localhost:8003/ocr
+      key: ""
+    audio:
+      enabled: false
+      url: http://localhost:8004/asr
+      key: ""
+
+# 切片配置
+chunking:
+  strategy: fixed_chars  # fixed_chars | fixed_tokens | semantic
+  chunk_size: 500
+  overlap: 50
+  min_chunk_size: 50
+
+# 向量数据库配置
+vector_db:
+  type: chroma  # qdrant | chroma | milvus
+  host: localhost
+  port: 6333
+  collection_name: knowledge_base
+  vector_size: 1024
+  distance: Cosine  # Cosine | Euclid | Dot
+
+# RAG 配置
+rag:
+  top_k: 5
+  rerank_top_k: 10
+  min_score: 0.5
+
+# 存储配置
+storage:
+  upload_dir: data/uploads
+  processed_dir: data/processed
+  max_file_size: 52428800  # 50MB
+
+# 服务配置
+server:
+  host: 0.0.0.0
+  port: 8000
+  workers: 1
+  reload: true

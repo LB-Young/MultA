@@ -1,0 +1,114 @@
+2026-03-24 13:08:39.370 | ERROR    | __main__:<module>:12 | 测试 error 日志
+2026-03-24 13:09:12.754 | ERROR    | src.api.routers.documents:process_document:142 | 处理文档失败: 文档不存在: 27ab606d-8a82-4c01-822c-a2dfe0880dd7
+2026-03-24 13:14:58.511 | ERROR    | src.api.routers.documents:process_document:142 | 处理文档失败: 文档不存在: cbe6973b-49e9-453c-9b13-f0cfbfe10a51
+2026-03-24 13:16:17.294 | ERROR    | src.api.routers.documents:process_document:142 | 处理文档失败: 文档不存在: cbe6973b-49e9-453c-9b13-f0cfbfe10a51
+2026-03-24 13:19:10.289 | ERROR    | src.infrastructure.storage.file_storage:_save:224 | 保存文档数据失败: name 'json' is not defined
+2026-03-24 13:19:10.295 | ERROR    | src.infrastructure.storage.file_storage:_save:224 | 保存文档数据失败: name 'json' is not defined
+2026-03-24 13:19:15.354 | ERROR    | src.infrastructure.embedding.client:embed_batch:107 | Embedding 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8001/v1/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-24 13:19:15.355 | ERROR    | src.application.services.chunk_service:process_document:93 | 文档处理失败: 04d67315-4f98-4127-885e-1981ec9634a2 - Embedding 生成失败: API 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8001/v1/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-24 13:19:15.356 | ERROR    | src.infrastructure.storage.file_storage:_save:224 | 保存文档数据失败: name 'json' is not defined
+2026-03-24 13:19:15.356 | ERROR    | src.api.routers.documents:process_document:142 | 处理文档失败: Embedding 生成失败: API 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8001/v1/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-24 13:19:37.241 | ERROR    | src.infrastructure.storage.file_storage:_save:224 | 保存文档数据失败: name 'json' is not defined
+2026-03-24 13:19:42.250 | ERROR    | src.infrastructure.embedding.client:embed_batch:107 | Embedding 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8001/v1/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-24 13:19:42.251 | ERROR    | src.application.services.chunk_service:process_document:93 | 文档处理失败: 04d67315-4f98-4127-885e-1981ec9634a2 - Embedding 生成失败: API 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8001/v1/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-24 13:19:42.251 | ERROR    | src.infrastructure.storage.file_storage:_save:224 | 保存文档数据失败: name 'json' is not defined
+2026-03-24 13:19:42.251 | ERROR    | src.api.routers.documents:process_document:142 | 处理文档失败: Embedding 生成失败: API 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8001/v1/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-24 13:25:43.269 | ERROR    | src.infrastructure.storage.file_storage:_save:224 | 保存文档数据失败: name 'json' is not defined
+2026-03-24 13:25:43.275 | ERROR    | src.infrastructure.storage.file_storage:_save:224 | 保存文档数据失败: name 'json' is not defined
+2026-03-24 13:25:44.571 | ERROR    | src.infrastructure.storage.file_storage:_save:224 | 保存文档数据失败: name 'json' is not defined
+2026-03-24 13:25:51.399 | ERROR    | src.infrastructure.vector_db.qdrant:create_collection:92 | 创建 Qdrant 集合失败: Unexpected Response: 502 (Bad Gateway)
+Raw response content:
+b''
+2026-03-24 13:25:55.232 | ERROR    | src.infrastructure.vector_db.qdrant:upsert:145 | Qdrant 插入向量失败: Unexpected Response: 502 (Bad Gateway)
+Raw response content:
+b''
+2026-03-24 13:25:55.233 | ERROR    | src.api.routers.documents:process_document:142 | 处理文档失败: Unexpected Response: 502 (Bad Gateway)
+Raw response content:
+b''
+2026-03-24 13:27:33.991 | ERROR    | src.infrastructure.storage.file_storage:_save:224 | 保存文档数据失败: name 'json' is not defined
+2026-03-24 13:27:34.625 | ERROR    | src.infrastructure.storage.file_storage:_save:224 | 保存文档数据失败: name 'json' is not defined
+2026-03-24 13:27:41.006 | ERROR    | src.infrastructure.vector_db.qdrant:create_collection:92 | 创建 Qdrant 集合失败: Unexpected Response: 502 (Bad Gateway)
+Raw response content:
+b''
+2026-03-24 13:27:44.426 | ERROR    | src.infrastructure.vector_db.qdrant:upsert:145 | Qdrant 插入向量失败: Unexpected Response: 502 (Bad Gateway)
+Raw response content:
+b''
+2026-03-24 13:27:44.426 | ERROR    | src.api.routers.documents:process_document:142 | 处理文档失败: Unexpected Response: 502 (Bad Gateway)
+Raw response content:
+b''
+2026-03-24 13:30:36.809 | ERROR    | src.infrastructure.storage.file_storage:_save:224 | 保存文档数据失败: name 'json' is not defined
+2026-03-24 13:30:36.815 | ERROR    | src.infrastructure.storage.file_storage:_save:224 | 保存文档数据失败: name 'json' is not defined
+2026-03-24 13:30:38.066 | ERROR    | src.infrastructure.storage.file_storage:_save:224 | 保存文档数据失败: name 'json' is not defined
+2026-03-24 13:30:43.405 | ERROR    | src.infrastructure.vector_db.qdrant:create_collection:92 | 创建 Qdrant 集合失败: Unexpected Response: 502 (Bad Gateway)
+Raw response content:
+b''
+2026-03-24 13:30:46.148 | ERROR    | src.infrastructure.vector_db.qdrant:upsert:145 | Qdrant 插入向量失败: Unexpected Response: 502 (Bad Gateway)
+Raw response content:
+b''
+2026-03-24 13:30:46.148 | ERROR    | src.api.routers.documents:process_document:142 | 处理文档失败: Unexpected Response: 502 (Bad Gateway)
+Raw response content:
+b''
+2026-03-24 13:57:34.297 | ERROR    | src.infrastructure.embedding.client:embed_batch:117 | Embedding 请求失败: Server error '502 Bad Gateway' for url 'http://localhost:11434/api/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-24 13:58:19.810 | ERROR    | src.infrastructure.embedding.client:embed_batch:117 | Embedding 请求失败: Server error '502 Bad Gateway' for url 'http://localhost:11434/api/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-24 13:58:35.811 | ERROR    | src.infrastructure.storage.file_storage:_save:224 | 保存文档数据失败: name 'json' is not defined
+2026-03-24 13:58:35.817 | ERROR    | src.infrastructure.storage.file_storage:_save:224 | 保存文档数据失败: name 'json' is not defined
+2026-03-24 13:58:39.138 | ERROR    | src.infrastructure.embedding.client:embed_batch:117 | Embedding 请求失败: Server error '502 Bad Gateway' for url 'http://localhost:11434/api/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-24 13:58:39.139 | ERROR    | src.application.services.chunk_service:process_document:93 | 文档处理失败: b715f214-22fe-4536-be6e-9ec511fd7df3 - Embedding 生成失败: API 请求失败: Server error '502 Bad Gateway' for url 'http://localhost:11434/api/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-24 13:58:39.139 | ERROR    | src.infrastructure.storage.file_storage:_save:224 | 保存文档数据失败: name 'json' is not defined
+2026-03-24 13:58:39.139 | ERROR    | src.api.routers.documents:process_document:142 | 处理文档失败: Embedding 生成失败: API 请求失败: Server error '502 Bad Gateway' for url 'http://localhost:11434/api/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-24 14:01:20.307 | ERROR    | src.infrastructure.embedding.client:embed_batch:117 | Embedding 请求失败: Server error '502 Bad Gateway' for url 'http://localhost:11434/api/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-24 14:01:27.647 | ERROR    | src.infrastructure.embedding.client:embed_batch:117 | Embedding 请求失败: Server error '502 Bad Gateway' for url 'http://localhost:11434/api/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-24 14:16:18.833 | ERROR    | src.infrastructure.storage.file_storage:_save:224 | 保存文档数据失败: name 'json' is not defined
+2026-03-24 14:16:18.840 | ERROR    | src.infrastructure.storage.file_storage:_save:224 | 保存文档数据失败: name 'json' is not defined
+2026-03-24 14:16:20.208 | ERROR    | src.infrastructure.storage.file_storage:_save:224 | 保存文档数据失败: name 'json' is not defined
+2026-03-24 14:16:25.685 | ERROR    | src.infrastructure.vector_db.qdrant:create_collection:92 | 创建 Qdrant 集合失败: Unexpected Response: 502 (Bad Gateway)
+Raw response content:
+b''
+2026-03-24 14:16:29.054 | ERROR    | src.infrastructure.vector_db.qdrant:upsert:145 | Qdrant 插入向量失败: Unexpected Response: 502 (Bad Gateway)
+Raw response content:
+b''
+2026-03-24 14:16:29.055 | ERROR    | src.api.routers.documents:process_document:142 | 处理文档失败: Unexpected Response: 502 (Bad Gateway)
+Raw response content:
+b''
+2026-03-24 14:26:53.721 | ERROR    | src.infrastructure.vector_db.chroma:get_by_document_id:304 | Chroma 按文档 ID 获取切片失败: Expected include item to be one of documents, embeddings, metadatas, distances, uris, data, got ids in get.
+2026-03-24 14:26:55.501 | ERROR    | src.infrastructure.vector_db.chroma:get_by_document_id:304 | Chroma 按文档 ID 获取切片失败: Expected include item to be one of documents, embeddings, metadatas, distances, uris, data, got ids in get.
+2026-03-24 14:26:57.442 | ERROR    | src.infrastructure.vector_db.chroma:get_by_document_id:304 | Chroma 按文档 ID 获取切片失败: Expected include item to be one of documents, embeddings, metadatas, distances, uris, data, got ids in get.
+2026-03-24 14:26:58.805 | ERROR    | src.infrastructure.vector_db.chroma:get_by_document_id:304 | Chroma 按文档 ID 获取切片失败: Expected include item to be one of documents, embeddings, metadatas, distances, uris, data, got ids in get.
+2026-03-24 14:27:10.019 | ERROR    | src.infrastructure.vector_db.chroma:get_by_document_id:304 | Chroma 按文档 ID 获取切片失败: Expected include item to be one of documents, embeddings, metadatas, distances, uris, data, got ids in get.
+2026-03-24 14:27:11.881 | ERROR    | src.infrastructure.vector_db.chroma:get_by_document_id:304 | Chroma 按文档 ID 获取切片失败: Expected include item to be one of documents, embeddings, metadatas, distances, uris, data, got ids in get.
+2026-03-24 14:27:13.065 | ERROR    | src.infrastructure.vector_db.chroma:get_by_document_id:304 | Chroma 按文档 ID 获取切片失败: Expected include item to be one of documents, embeddings, metadatas, distances, uris, data, got ids in get.
+2026-03-24 14:34:32.272 | ERROR    | src.infrastructure.embedding.client:embed_batch:117 | Embedding 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8001/v1/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-24 15:15:42.687 | ERROR    | src.api.routers.rag:query:153 | 查询失败: 'member_descriptor' object has no attribute 'get'
+2026-03-24 15:17:36.619 | ERROR    | src.api.main:general_error_handler:92 | 未处理的异常: fromisoformat: argument must be str
+2026-03-24 15:17:37.907 | ERROR    | src.api.main:general_error_handler:92 | 未处理的异常: fromisoformat: argument must be str
+2026-03-24 15:21:32.389 | ERROR    | src.api.routers.rag:query:153 | 查询失败: 'member_descriptor' object has no attribute 'get'
+2026-03-24 15:23:51.656 | ERROR    | src.api.routers.rag:query:153 | 查询失败: 'member_descriptor' object has no attribute 'get'
+2026-03-24 15:37:04.449 | ERROR    | src.api.routers.rag:query:153 | 查询失败: 'member_descriptor' object has no attribute 'get'
+2026-03-24 16:23:56.829 | ERROR    | src.api.routers.rag:query:153 | 查询失败: 'member_descriptor' object has no attribute 'get'
+2026-03-24 16:27:01.557 | ERROR    | src.api.routers.rag:query:153 | 查询失败: 'member_descriptor' object has no attribute 'get'
+2026-03-24 16:27:05.586 | ERROR    | src.api.routers.rag:query:153 | 查询失败: 'member_descriptor' object has no attribute 'get'
+2026-03-24 16:27:10.474 | ERROR    | src.api.routers.rag:query:153 | 查询失败: 'member_descriptor' object has no attribute 'get'
+2026-03-24 16:29:47.516 | ERROR    | src.api.routers.rag:query:153 | 查询失败: 'member_descriptor' object has no attribute 'get'
+2026-03-24 17:17:08.729 | ERROR    | src.api.main:general_error_handler:92 | 未处理的异常: fromisoformat: argument must be str
+2026-03-24 17:17:11.564 | ERROR    | src.api.routers.rag:query:153 | 查询失败: fromisoformat: argument must be str
+2026-03-24 17:17:11.618 | ERROR    | src.api.main:general_error_handler:92 | 未处理的异常: fromisoformat: argument must be str
+2026-03-24 17:19:09.304 | ERROR    | src.api.main:general_error_handler:92 | 未处理的异常: fromisoformat: argument must be str
+2026-03-24 17:21:31.031 | ERROR    | src.api.main:general_error_handler:92 | 未处理的异常: fromisoformat: argument must be str
+2026-03-24 17:21:39.261 | ERROR    | src.api.main:general_error_handler:92 | 未处理的异常: fromisoformat: argument must be str
+2026-03-24 17:21:39.363 | ERROR    | src.api.main:general_error_handler:92 | 未处理的异常: fromisoformat: argument must be str
+2026-03-24 17:21:56.082 | ERROR    | src.api.routers.rag:query:153 | 查询失败: fromisoformat: argument must be str
+2026-03-24 17:21:56.162 | ERROR    | src.api.main:general_error_handler:92 | 未处理的异常: fromisoformat: argument must be str
