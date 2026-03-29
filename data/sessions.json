@@ -470,5 +470,53 @@
     ],
     "created_at": "2026-03-24T20:21:53.640651",
     "updated_at": "2026-03-24T20:22:32.362853"
+  },
+  "a67e1a7c-026b-4b63-a891-f66ccbc9ac5f": {
+    "id": "a67e1a7c-026b-4b63-a891-f66ccbc9ac5f",
+    "title": "hi",
+    "messages": [
+      {
+        "id": "41e03ce2-9eda-4085-b104-fbe0a79986c1",
+        "session_id": "a67e1a7c-026b-4b63-a891-f66ccbc9ac5f",
+        "role": "user",
+        "content": "hi",
+        "query_result": null,
+        "created_at": "2026-03-29T20:58:07.646461"
+      },
+      {
+        "id": "cf7fb285-7083-48dc-b370-334ff422a345",
+        "session_id": "a67e1a7c-026b-4b63-a891-f66ccbc9ac5f",
+        "role": "assistant",
+        "content": "根据知识库内容，当对话仅仅是人类之间的闲聊（casual banter）且不需要纠正错误信息或总结内容时，助手应保持沉默（HEARTBEAT_OK），以免打断对话流程。因此，对于\"hi\"这样的简单问候，最合适的回应是保持沉默。\n\n来源：文档1、文档2\n",
+        "query_result": null,
+        "created_at": "2026-03-29T20:58:07.646566"
+      }
+    ],
+    "created_at": "2026-03-29T20:58:02.336339",
+    "updated_at": "2026-03-29T20:58:07.646574"
+  },
+  "10c5aba0-db73-491d-80e4-9296704baae8": {
+    "id": "10c5aba0-db73-491d-80e4-9296704baae8",
+    "title": "skill文件的格式是什么",
+    "messages": [
+      {
+        "id": "ec3daa1f-28ae-4286-a36b-4334d23d8299",
+        "session_id": "10c5aba0-db73-491d-80e4-9296704baae8",
+        "role": "user",
+        "content": "skill文件的格式是什么",
+        "query_result": null,
+        "created_at": "2026-03-29T20:58:55.001614"
+      },
+      {
+        "id": "c88b2e37-e7f3-48e6-b7c6-0e759116a1d3",
+        "session_id": "10c5aba0-db73-491d-80e4-9296704baae8",
+        "role": "assistant",
+        "content": "根据知识库内容，Skill 文件的格式和结构如下：\n\n**1. 核心文件结构**\n每个 Skill 必须包含一个必需的 `SKILL.md` 文件，以及可选的打包资源。目录结构如下：\n```\nskill-name/\n├── SKILL.md (required)\n│   ├── YAML frontmatter metadata (required)\n│   │   ├── name: (required)\n│   │   └── description: (required)\n│   └── Markdown instructions (required)\n└── Bundled Resources (optional)\n    ├── scripts/          - 可执行代码（Python/Bash/等）\n    ├── references/       - 计划在需要时加载到上下文中的文档\n```\n*(来源：文档 3)*\n\n**2. YAML 前缀 (Frontmatter) 规则**\n`SKILL.md` 开头的 YAML 部分**只能包含以下两个字段**：\n*   `name`: 必需\n*   `description`: 必需\n*   **禁止**包含任何其他字段。\n*(来源：文档 1、文档 4)*\n\n**3. 正文内容 (Body)**\nYAML 之后必须是 Markdown 格式的说明，内容包括：\n*   如何使用该 Skill 及其打包资源的说明。\n*   建议控制在 500 行以内，以减少上下文膨胀。\n*(来源：文档 3、文档 4)*\n\n**4. 禁止包含的文件**\nSkill 中不应包含多余的文档或辅助文件，例如：\n*   README.md\n*   INSTALLATION_GUIDE.md\n*   QUICK_REFERENCE.md\n*   CHANGELOG.md\n*(来源：文档 5)*\n\n**5. 打包格式**\n开发完成后，需使用 `scripts/package_skill.py` 脚本将 Skill 文件夹打包成一个可分发的 `.skill` 文件。\n*(来源：文档 4)*\n",
+        "query_result": null,
+        "created_at": "2026-03-29T20:58:55.001718"
+      }
+    ],
+    "created_at": "2026-03-29T20:58:26.655168",
+    "updated_at": "2026-03-29T20:58:55.001726"
   }
 }

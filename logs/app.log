@@ -4533,3 +4533,193 @@ For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/St
 2026-03-24 21:04:25.848 | INFO     | src.api.main:log_requests:65 | POST /agent/query - 200 (46.573s) [02f70548]
 2026-03-24 21:05:42.875 | INFO     | src.api.main:shutdown_event:155 | 正在关闭 FileSystem RAG API...
 2026-03-24 21:05:42.876 | INFO     | src.api.main:shutdown_event:159 | FileSystem RAG API 已关闭
+2026-03-25 15:51:51.179 | INFO     | src.api.main:startup_event:119 | 正在启动 FileSystem RAG API...
+2026-03-25 15:51:51.182 | INFO     | src.api.main:startup_event:126 | 配置已加载: chroma
+2026-03-25 15:51:51.182 | INFO     | src.api.main:startup_event:138 | 运行时配置: embedding=http://100.117.128.23:8001/qwen3-embedding-0.6b, llm=http://100.117.128.23:8000/qwen3-5-4b
+2026-03-25 15:51:56.258 | ERROR    | src.infrastructure.embedding.client:embed_batch:117 | Embedding 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8001/v1/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-25 15:51:56.258 | WARNING  | src.infrastructure.embedding.client:get_dimension:129 | 无法获取 embedding 维度: Embedding 生成失败: API 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8001/v1/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-25 15:51:56.258 | INFO     | src.api.deps:init_vector_store:138 | 检测到 embedding 维度: 1536
+2026-03-25 15:51:56.259 | INFO     | src.infrastructure.vector_db.factory:initialize:53 | 向量数据库已初始化: chroma
+2026-03-25 15:51:56.628 | INFO     | src.infrastructure.vector_db.chroma:initialize:50 | Chroma 连接成功: ./chroma_db
+2026-03-25 15:51:56.628 | INFO     | src.api.deps:init_vector_store:161 | 向量数据库初始化完成（维度: 1536）
+2026-03-25 15:51:56.630 | INFO     | src.api.main:startup_event:146 | 向量数据库初始化完成
+2026-03-25 15:51:56.630 | INFO     | src.api.main:startup_event:150 | FileSystem RAG API 启动完成
+2026-03-25 15:51:56.644 | INFO     | src.api.main:log_requests:65 | GET /config - 200 (0.001s) [b26c16ea]
+2026-03-25 15:51:56.711 | INFO     | src.infrastructure.storage.session_storage:__init__:22 | 会话存储路径: /Users/liubaoyang/Documents/外包/MultA/data/agent_sessions.json
+2026-03-25 15:51:56.712 | INFO     | src.api.main:log_requests:65 | GET /agent/sessions - 200 (0.001s) [660bddcf]
+2026-03-25 15:51:58.067 | INFO     | src.api.main:log_requests:65 | GET /config - 200 (0.000s) [c8bab1b1]
+2026-03-25 15:51:58.766 | INFO     | src.infrastructure.storage.session_storage:__init__:22 | 会话存储路径: /Users/liubaoyang/Documents/外包/MultA/data/sessions.json
+2026-03-25 15:51:58.767 | INFO     | src.api.main:log_requests:65 | GET /rag/sessions - 200 (0.002s) [653e8a37]
+2026-03-25 15:52:05.831 | INFO     | src.api.main:shutdown_event:155 | 正在关闭 FileSystem RAG API...
+2026-03-25 15:52:05.831 | INFO     | src.api.main:shutdown_event:159 | FileSystem RAG API 已关闭
+2026-03-25 15:52:07.397 | INFO     | src.api.main:startup_event:119 | 正在启动 FileSystem RAG API...
+2026-03-25 15:52:07.399 | INFO     | src.api.main:startup_event:126 | 配置已加载: chroma
+2026-03-25 15:52:07.399 | INFO     | src.api.main:startup_event:138 | 运行时配置: embedding=http://100.117.128.23:8001/qwen3-embedding-0.6b, llm=http://100.117.128.23:8000/qwen3-5-4b
+2026-03-25 15:52:12.455 | ERROR    | src.infrastructure.embedding.client:embed_batch:117 | Embedding 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8001/v1/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-25 15:52:12.455 | WARNING  | src.infrastructure.embedding.client:get_dimension:129 | 无法获取 embedding 维度: Embedding 生成失败: API 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8001/v1/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-25 15:52:12.455 | INFO     | src.api.deps:init_vector_store:138 | 检测到 embedding 维度: 1536
+2026-03-25 15:52:12.455 | INFO     | src.infrastructure.vector_db.factory:initialize:53 | 向量数据库已初始化: chroma
+2026-03-25 15:52:12.714 | INFO     | src.infrastructure.vector_db.chroma:initialize:50 | Chroma 连接成功: ./chroma_db
+2026-03-25 15:52:12.715 | INFO     | src.api.deps:init_vector_store:161 | 向量数据库初始化完成（维度: 1536）
+2026-03-25 15:52:12.716 | INFO     | src.api.main:startup_event:146 | 向量数据库初始化完成
+2026-03-25 15:52:12.716 | INFO     | src.api.main:startup_event:150 | FileSystem RAG API 启动完成
+2026-03-25 15:52:13.497 | INFO     | src.api.main:log_requests:65 | GET /config - 200 (0.003s) [a099f31f]
+2026-03-25 15:52:13.612 | INFO     | src.infrastructure.storage.session_storage:__init__:22 | 会话存储路径: /Users/liubaoyang/Documents/外包/MultA/data/sessions.json
+2026-03-25 15:52:13.614 | INFO     | src.api.main:log_requests:65 | GET /rag/sessions - 200 (0.003s) [4f90aafc]
+2026-03-25 15:52:22.221 | INFO     | src.infrastructure.storage.session_storage:__init__:22 | 会话存储路径: /Users/liubaoyang/Documents/外包/MultA/data/agent_sessions.json
+2026-03-25 15:52:22.222 | INFO     | src.api.main:log_requests:65 | GET /agent/sessions - 200 (0.001s) [0e9e681d]
+2026-03-25 15:52:25.767 | INFO     | src.api.main:log_requests:65 | GET /agent/sessions - 200 (0.000s) [bd12c831]
+2026-03-25 15:52:25.821 | INFO     | src.api.main:log_requests:65 | POST /agent/sessions - 200 (0.007s) [4b595704]
+2026-03-25 15:52:30.917 | ERROR    | src.infrastructure.llm.client:chat:121 | LLM 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8000/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-25 15:52:30.918 | ERROR    | src.api.routers.agent:query:128 | Agent 查询失败: LLM 调用失败: API 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8000/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-25 15:52:30.919 | INFO     | src.api.main:log_requests:65 | POST /agent/query - 500 (5.047s) [7beae8af]
+2026-03-29 20:23:57.726 | INFO     | src.api.main:startup_event:119 | 正在启动 FileSystem RAG API...
+2026-03-29 20:23:57.727 | INFO     | src.api.main:startup_event:126 | 配置已加载: chroma
+2026-03-29 20:23:57.727 | INFO     | src.api.main:startup_event:138 | 运行时配置: embedding=http://100.117.128.23:8001/qwen3-embedding-0.6b, llm=http://100.117.128.23:8000/qwen3-5-4b
+2026-03-29 20:24:02.889 | ERROR    | src.infrastructure.embedding.client:embed_batch:117 | Embedding 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8001/v1/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-29 20:24:02.890 | WARNING  | src.infrastructure.embedding.client:get_dimension:129 | 无法获取 embedding 维度: Embedding 生成失败: API 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8001/v1/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-29 20:24:02.890 | INFO     | src.api.deps:init_vector_store:138 | 检测到 embedding 维度: 1536
+2026-03-29 20:24:02.890 | INFO     | src.infrastructure.vector_db.factory:initialize:53 | 向量数据库已初始化: chroma
+2026-03-29 20:24:04.274 | INFO     | src.infrastructure.vector_db.chroma:initialize:50 | Chroma 连接成功: ./chroma_db
+2026-03-29 20:24:04.275 | INFO     | src.api.deps:init_vector_store:161 | 向量数据库初始化完成（维度: 1536）
+2026-03-29 20:24:04.277 | INFO     | src.api.main:startup_event:146 | 向量数据库初始化完成
+2026-03-29 20:24:04.277 | INFO     | src.api.main:startup_event:150 | FileSystem RAG API 启动完成
+2026-03-29 20:24:04.282 | INFO     | src.api.main:log_requests:65 | GET /config - 200 (0.000s) [468b94e3]
+2026-03-29 20:24:04.329 | INFO     | src.infrastructure.storage.session_storage:__init__:22 | 会话存储路径: /Users/liubaoyang/Documents/外包/MultA/data/sessions.json
+2026-03-29 20:24:04.331 | INFO     | src.api.main:log_requests:65 | GET /rag/sessions - 200 (0.001s) [9f71ba33]
+2026-03-29 20:24:08.015 | INFO     | src.infrastructure.storage.session_storage:__init__:22 | 会话存储路径: /Users/liubaoyang/Documents/外包/MultA/data/agent_sessions.json
+2026-03-29 20:24:08.016 | INFO     | src.api.main:log_requests:65 | GET /agent/sessions - 200 (0.001s) [98679a37]
+2026-03-29 20:24:08.794 | INFO     | src.infrastructure.storage.file_storage:_load:207 | 已加载 5 个文档
+2026-03-29 20:24:08.794 | INFO     | src.api.main:log_requests:65 | GET /documents - 200 (0.001s) [51ced587]
+2026-03-29 20:24:10.286 | INFO     | src.api.main:log_requests:65 | GET /documents - 200 (0.001s) [4f81de94]
+2026-03-29 20:24:10.313 | INFO     | src.api.main:log_requests:65 | GET /chunks/1c2c60e2-2da2-4db3-a1f1-6f01b7700c6d - 200 (0.020s) [fcd099f2]
+2026-03-29 20:44:21.650 | INFO     | src.api.main:log_requests:65 | GET /rag/sessions - 200 (0.001s) [d1ab434b]
+2026-03-29 20:47:37.412 | INFO     | src.api.main:shutdown_event:155 | 正在关闭 FileSystem RAG API...
+2026-03-29 20:47:37.413 | INFO     | src.api.main:shutdown_event:159 | FileSystem RAG API 已关闭
+2026-03-29 20:47:37.837 | INFO     | src.api.main:startup_event:119 | 正在启动 FileSystem RAG API...
+2026-03-29 20:47:37.839 | INFO     | src.api.main:startup_event:126 | 配置已加载: chroma
+2026-03-29 20:47:37.839 | INFO     | src.api.main:startup_event:138 | 运行时配置: embedding=http://100.117.128.23:8001/qwen3-embedding-0.6b, llm=http://100.117.128.23:8000/qwen3-5-4b
+2026-03-29 20:47:42.942 | ERROR    | src.infrastructure.embedding.client:embed_batch:117 | Embedding 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8001/v1/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-29 20:47:42.942 | WARNING  | src.infrastructure.embedding.client:get_dimension:129 | 无法获取 embedding 维度: Embedding 生成失败: API 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8001/v1/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-29 20:47:42.942 | INFO     | src.api.deps:init_vector_store:138 | 检测到 embedding 维度: 1536
+2026-03-29 20:47:42.943 | INFO     | src.infrastructure.vector_db.factory:initialize:53 | 向量数据库已初始化: chroma
+2026-03-29 20:47:43.285 | INFO     | src.infrastructure.vector_db.chroma:initialize:50 | Chroma 连接成功: ./chroma_db
+2026-03-29 20:47:43.285 | INFO     | src.api.deps:init_vector_store:161 | 向量数据库初始化完成（维度: 1536）
+2026-03-29 20:47:43.287 | INFO     | src.api.main:startup_event:146 | 向量数据库初始化完成
+2026-03-29 20:47:43.287 | INFO     | src.api.main:startup_event:150 | FileSystem RAG API 启动完成
+2026-03-29 20:47:46.418 | INFO     | src.api.main:shutdown_event:155 | 正在关闭 FileSystem RAG API...
+2026-03-29 20:47:46.418 | INFO     | src.api.main:shutdown_event:159 | FileSystem RAG API 已关闭
+2026-03-29 20:47:46.719 | INFO     | src.api.main:startup_event:119 | 正在启动 FileSystem RAG API...
+2026-03-29 20:47:46.721 | INFO     | src.api.main:startup_event:126 | 配置已加载: chroma
+2026-03-29 20:47:46.721 | INFO     | src.api.main:startup_event:138 | 运行时配置: embedding=http://100.117.128.23:8001/qwen3-embedding-0.6b, llm=http://100.117.128.23:8000/qwen3-5-4b
+2026-03-29 20:47:51.799 | ERROR    | src.infrastructure.embedding.client:embed_batch:117 | Embedding 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8001/v1/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-29 20:47:51.799 | WARNING  | src.infrastructure.embedding.client:get_dimension:129 | 无法获取 embedding 维度: Embedding 生成失败: API 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8001/v1/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-29 20:47:51.799 | INFO     | src.api.deps:init_vector_store:138 | 检测到 embedding 维度: 1536
+2026-03-29 20:47:51.799 | INFO     | src.infrastructure.vector_db.factory:initialize:53 | 向量数据库已初始化: chroma
+2026-03-29 20:47:52.187 | INFO     | src.infrastructure.vector_db.chroma:initialize:50 | Chroma 连接成功: ./chroma_db
+2026-03-29 20:47:52.188 | INFO     | src.api.deps:init_vector_store:161 | 向量数据库初始化完成（维度: 1536）
+2026-03-29 20:47:52.189 | INFO     | src.api.main:startup_event:146 | 向量数据库初始化完成
+2026-03-29 20:47:52.189 | INFO     | src.api.main:startup_event:150 | FileSystem RAG API 启动完成
+2026-03-29 20:47:55.319 | INFO     | src.api.main:shutdown_event:155 | 正在关闭 FileSystem RAG API...
+2026-03-29 20:47:55.319 | INFO     | src.api.main:shutdown_event:159 | FileSystem RAG API 已关闭
+2026-03-29 20:47:55.610 | INFO     | src.api.main:startup_event:119 | 正在启动 FileSystem RAG API...
+2026-03-29 20:47:55.611 | INFO     | src.api.main:startup_event:126 | 配置已加载: chroma
+2026-03-29 20:47:55.611 | INFO     | src.api.main:startup_event:138 | 运行时配置: embedding=http://100.117.128.23:8001/qwen3-embedding-0.6b, llm=http://100.117.128.23:8000/qwen3-5-4b
+2026-03-29 20:48:00.696 | ERROR    | src.infrastructure.embedding.client:embed_batch:117 | Embedding 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8001/v1/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-29 20:48:00.696 | WARNING  | src.infrastructure.embedding.client:get_dimension:129 | 无法获取 embedding 维度: Embedding 生成失败: API 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8001/v1/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-29 20:48:00.696 | INFO     | src.api.deps:init_vector_store:138 | 检测到 embedding 维度: 1536
+2026-03-29 20:48:00.696 | INFO     | src.infrastructure.vector_db.factory:initialize:53 | 向量数据库已初始化: chroma
+2026-03-29 20:48:01.033 | INFO     | src.infrastructure.vector_db.chroma:initialize:50 | Chroma 连接成功: ./chroma_db
+2026-03-29 20:48:01.034 | INFO     | src.api.deps:init_vector_store:161 | 向量数据库初始化完成（维度: 1536）
+2026-03-29 20:48:01.035 | INFO     | src.api.main:startup_event:146 | 向量数据库初始化完成
+2026-03-29 20:48:01.035 | INFO     | src.api.main:startup_event:150 | FileSystem RAG API 启动完成
+2026-03-29 20:48:05.685 | INFO     | src.api.main:shutdown_event:155 | 正在关闭 FileSystem RAG API...
+2026-03-29 20:48:05.685 | INFO     | src.api.main:shutdown_event:159 | FileSystem RAG API 已关闭
+2026-03-29 20:48:05.985 | INFO     | src.api.main:startup_event:119 | 正在启动 FileSystem RAG API...
+2026-03-29 20:48:05.986 | INFO     | src.api.main:startup_event:126 | 配置已加载: chroma
+2026-03-29 20:48:05.986 | INFO     | src.api.main:startup_event:138 | 运行时配置: embedding=http://100.117.128.23:8001/qwen3-embedding-0.6b, llm=http://100.117.128.23:8000/qwen3-5-4b
+2026-03-29 20:48:11.074 | ERROR    | src.infrastructure.embedding.client:embed_batch:117 | Embedding 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8001/v1/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-29 20:48:11.074 | WARNING  | src.infrastructure.embedding.client:get_dimension:129 | 无法获取 embedding 维度: Embedding 生成失败: API 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8001/v1/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-29 20:48:11.075 | INFO     | src.api.deps:init_vector_store:138 | 检测到 embedding 维度: 1536
+2026-03-29 20:48:11.075 | INFO     | src.infrastructure.vector_db.factory:initialize:53 | 向量数据库已初始化: chroma
+2026-03-29 20:48:11.418 | INFO     | src.infrastructure.vector_db.chroma:initialize:50 | Chroma 连接成功: ./chroma_db
+2026-03-29 20:48:11.418 | INFO     | src.api.deps:init_vector_store:161 | 向量数据库初始化完成（维度: 1536）
+2026-03-29 20:48:11.420 | INFO     | src.api.main:startup_event:146 | 向量数据库初始化完成
+2026-03-29 20:48:11.420 | INFO     | src.api.main:startup_event:150 | FileSystem RAG API 启动完成
+2026-03-29 20:49:21.423 | INFO     | src.api.main:shutdown_event:155 | 正在关闭 FileSystem RAG API...
+2026-03-29 20:49:21.423 | INFO     | src.api.main:shutdown_event:159 | FileSystem RAG API 已关闭
+2026-03-29 20:49:21.717 | INFO     | src.api.main:startup_event:119 | 正在启动 FileSystem RAG API...
+2026-03-29 20:49:21.719 | INFO     | src.api.main:startup_event:126 | 配置已加载: chroma
+2026-03-29 20:49:21.719 | INFO     | src.api.main:startup_event:138 | 运行时配置: embedding=http://100.117.128.23:8001/qwen3-embedding-0.6b, llm=http://100.117.128.23:8000/qwen3-5-4b
+2026-03-29 20:49:26.805 | ERROR    | src.infrastructure.embedding.client:embed_batch:117 | Embedding 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8001/v1/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-29 20:49:26.805 | WARNING  | src.infrastructure.embedding.client:get_dimension:129 | 无法获取 embedding 维度: Embedding 生成失败: API 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8001/v1/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-29 20:49:26.805 | INFO     | src.api.deps:init_vector_store:138 | 检测到 embedding 维度: 1536
+2026-03-29 20:49:26.805 | INFO     | src.infrastructure.vector_db.factory:initialize:53 | 向量数据库已初始化: chroma
+2026-03-29 20:49:27.168 | INFO     | src.infrastructure.vector_db.chroma:initialize:50 | Chroma 连接成功: ./chroma_db
+2026-03-29 20:49:27.168 | INFO     | src.api.deps:init_vector_store:161 | 向量数据库初始化完成（维度: 1536）
+2026-03-29 20:49:27.170 | INFO     | src.api.main:startup_event:146 | 向量数据库初始化完成
+2026-03-29 20:49:27.170 | INFO     | src.api.main:startup_event:150 | FileSystem RAG API 启动完成
+2026-03-29 20:50:56.280 | INFO     | src.api.main:shutdown_event:155 | 正在关闭 FileSystem RAG API...
+2026-03-29 20:50:56.281 | INFO     | src.api.main:shutdown_event:159 | FileSystem RAG API 已关闭
+2026-03-29 20:50:56.679 | INFO     | src.api.main:startup_event:119 | 正在启动 FileSystem RAG API...
+2026-03-29 20:50:56.681 | INFO     | src.api.main:startup_event:126 | 配置已加载: chroma
+2026-03-29 20:50:56.681 | INFO     | src.api.main:startup_event:138 | 运行时配置: embedding=http://100.117.128.23:8001/qwen3-embedding-0.6b, llm=http://100.117.128.23:8000/qwen3-5-4b
+2026-03-29 20:51:01.778 | ERROR    | src.infrastructure.embedding.client:embed_batch:117 | Embedding 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8001/v1/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-29 20:51:01.779 | WARNING  | src.infrastructure.embedding.client:get_dimension:129 | 无法获取 embedding 维度: Embedding 生成失败: API 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8001/v1/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-29 20:51:01.779 | INFO     | src.api.deps:init_vector_store:138 | 检测到 embedding 维度: 1536
+2026-03-29 20:51:01.779 | INFO     | src.infrastructure.vector_db.factory:initialize:53 | 向量数据库已初始化: chroma
+2026-03-29 20:51:02.163 | INFO     | src.infrastructure.vector_db.chroma:initialize:50 | Chroma 连接成功: ./chroma_db
+2026-03-29 20:51:02.165 | INFO     | src.api.deps:init_vector_store:161 | 向量数据库初始化完成（维度: 1536）
+2026-03-29 20:51:02.167 | INFO     | src.api.main:startup_event:146 | 向量数据库初始化完成
+2026-03-29 20:51:02.167 | INFO     | src.api.main:startup_event:150 | FileSystem RAG API 启动完成
+2026-03-29 20:51:02.442 | INFO     | src.api.main:startup_event:119 | 正在启动 FileSystem RAG API...
+2026-03-29 20:51:02.443 | INFO     | src.api.main:startup_event:126 | 配置已加载: chroma
+2026-03-29 20:51:02.444 | INFO     | src.api.main:startup_event:138 | 运行时配置: embedding=http://100.117.128.23:8001/qwen3-embedding-0.6b, llm=http://100.117.128.23:8000/qwen3-5-4b
+2026-03-29 20:51:07.521 | ERROR    | src.infrastructure.embedding.client:embed_batch:117 | Embedding 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8001/v1/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-29 20:51:07.521 | WARNING  | src.infrastructure.embedding.client:get_dimension:129 | 无法获取 embedding 维度: Embedding 生成失败: API 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8001/v1/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-29 20:51:07.521 | INFO     | src.api.deps:init_vector_store:138 | 检测到 embedding 维度: 1536
+2026-03-29 20:51:07.521 | INFO     | src.infrastructure.vector_db.factory:initialize:53 | 向量数据库已初始化: chroma
+2026-03-29 20:51:07.860 | INFO     | src.infrastructure.vector_db.chroma:initialize:50 | Chroma 连接成功: ./chroma_db
+2026-03-29 20:51:07.861 | INFO     | src.api.deps:init_vector_store:161 | 向量数据库初始化完成（维度: 1536）
+2026-03-29 20:51:07.863 | INFO     | src.api.main:startup_event:146 | 向量数据库初始化完成
+2026-03-29 20:51:07.863 | INFO     | src.api.main:startup_event:150 | FileSystem RAG API 启动完成
+2026-03-29 20:57:59.718 | INFO     | src.infrastructure.storage.session_storage:__init__:22 | 会话存储路径: /Users/liubaoyang/Documents/外包/MultA/data/sessions.json
+2026-03-29 20:57:59.720 | INFO     | src.api.main:log_requests:65 | GET /rag/sessions - 200 (0.002s) [6315692f]
+2026-03-29 20:58:02.292 | INFO     | src.api.main:log_requests:65 | GET /rag/sessions - 200 (0.001s) [3c77df16]
+2026-03-29 20:58:02.337 | INFO     | src.api.main:log_requests:65 | POST /rag/sessions - 200 (0.001s) [6c330450]
+2026-03-29 20:58:02.389 | INFO     | src.api.main:log_requests:65 | GET /rag/sessions - 200 (0.000s) [f3890a8c]
+2026-03-29 20:58:02.444 | INFO     | src.api.main:log_requests:65 | GET /rag/sessions - 200 (0.000s) [eff4a7ef]
+2026-03-29 20:58:07.654 | INFO     | src.api.main:log_requests:65 | POST /rag/query - 200 (5.161s) [15fe4daa]
+2026-03-29 20:58:07.732 | INFO     | src.api.main:log_requests:65 | GET /rag/sessions - 200 (0.001s) [cb7ae5af]
+2026-03-29 20:58:21.412 | INFO     | src.api.main:log_requests:65 | GET /rag/sessions - 200 (0.001s) [9aa039f6]
+2026-03-29 20:58:26.656 | INFO     | src.api.main:log_requests:65 | POST /rag/sessions - 200 (0.001s) [ebbb695b]
+2026-03-29 20:58:26.710 | INFO     | src.api.main:log_requests:65 | GET /rag/sessions - 200 (0.000s) [eaaaa4ff]
+2026-03-29 20:58:34.044 | INFO     | src.api.main:log_requests:65 | GET /rag/sessions - 200 (0.001s) [da6fae36]
+2026-03-29 20:58:34.108 | INFO     | src.api.main:log_requests:65 | GET /rag/sessions - 200 (0.000s) [660afb3a]
+2026-03-29 20:58:34.164 | INFO     | src.api.main:log_requests:65 | GET /rag/sessions - 200 (0.000s) [cb3a0db7]
+2026-03-29 20:58:55.005 | INFO     | src.api.main:log_requests:65 | POST /rag/query - 200 (20.796s) [51afc7a3]
+2026-03-29 20:58:55.083 | INFO     | src.api.main:log_requests:65 | GET /rag/sessions - 200 (0.000s) [574a66ca]
+2026-03-29 20:59:25.004 | INFO     | src.api.main:shutdown_event:155 | 正在关闭 FileSystem RAG API...
+2026-03-29 20:59:25.004 | INFO     | src.api.main:shutdown_event:159 | FileSystem RAG API 已关闭

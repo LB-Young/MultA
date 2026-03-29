@@ -112,3 +112,27 @@ For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/St
 2026-03-24 17:21:39.363 | ERROR    | src.api.main:general_error_handler:92 | 未处理的异常: fromisoformat: argument must be str
 2026-03-24 17:21:56.082 | ERROR    | src.api.routers.rag:query:153 | 查询失败: fromisoformat: argument must be str
 2026-03-24 17:21:56.162 | ERROR    | src.api.main:general_error_handler:92 | 未处理的异常: fromisoformat: argument must be str
+2026-03-25 15:51:56.258 | ERROR    | src.infrastructure.embedding.client:embed_batch:117 | Embedding 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8001/v1/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-25 15:52:12.455 | ERROR    | src.infrastructure.embedding.client:embed_batch:117 | Embedding 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8001/v1/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-25 15:52:30.917 | ERROR    | src.infrastructure.llm.client:chat:121 | LLM 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8000/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-25 15:52:30.918 | ERROR    | src.api.routers.agent:query:128 | Agent 查询失败: LLM 调用失败: API 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8000/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-29 20:24:02.889 | ERROR    | src.infrastructure.embedding.client:embed_batch:117 | Embedding 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8001/v1/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-29 20:47:42.942 | ERROR    | src.infrastructure.embedding.client:embed_batch:117 | Embedding 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8001/v1/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-29 20:47:51.799 | ERROR    | src.infrastructure.embedding.client:embed_batch:117 | Embedding 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8001/v1/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-29 20:48:00.696 | ERROR    | src.infrastructure.embedding.client:embed_batch:117 | Embedding 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8001/v1/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-29 20:48:11.074 | ERROR    | src.infrastructure.embedding.client:embed_batch:117 | Embedding 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8001/v1/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-29 20:49:26.805 | ERROR    | src.infrastructure.embedding.client:embed_batch:117 | Embedding 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8001/v1/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-29 20:51:01.778 | ERROR    | src.infrastructure.embedding.client:embed_batch:117 | Embedding 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8001/v1/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-03-29 20:51:07.521 | ERROR    | src.infrastructure.embedding.client:embed_batch:117 | Embedding 请求失败: Server error '502 Bad Gateway' for url 'http://100.117.128.23:8001/v1/embeddings'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
